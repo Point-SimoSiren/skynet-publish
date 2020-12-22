@@ -5,86 +5,66 @@
     <title>Skynet</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-    <script>
-
-        function hideFooter() {
-            let b = "<p>It was pretty handsome</p><button onClick='showFooter()'>Regret?</button>"
-            document.getElementById("footer").style.visibility = "hidden";
-            document.getElementById("show").innerHTML = b;
-        }
-
-        function showFooter() {
-            document.getElementById("footer").style.visibility = "visible";
-            document.getElementById("show").innerHTML = '';
-        }
-    </script>
-
-
-    <style>
-        #footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: red;
-            color: white;
-            text-align: center;
-            opacity: 60%;
-        }
-
-        #show {
-            margin-top: 50px;
-        }
-
-        #otsikko {
-            margin-top: 150px;
-            color: purple
-        }
-
-        .btn-group {
-            margin-top: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
-<body style="background-color: silver">
+<body>
 
+    <button class="myButton" id="piilotus" style="visibility: hidden;" onclick="piilota()">piilota</button>
+    <h4 id="yhteys"></h4>
+    <div id="main-header">
+        <button class="myButton" onclick="yhteys()">yhteystietomme</button>
 
-    <div class="container">
-        <center>
-            <div id="show">
-            </div>
-        </center>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-
-
-
-    <div id="footer">
-        <marquee behavior="scroll" direction="left">
-            <h5>
-                <button class="btn btn-warning" onclick="hideFooter()">Hide footer</button> *******
-                This is my linux apache2 server publishing practice project <button class="btn btn-warning"
-                    onclick="hideFooter()">Hide footer</button>
-            </h5>
-
-        </marquee>
+        <h1>codefix</h1>
     </div>
 
 
+
+
+    <div class="text-area">
+        <p class="textparagraph">Palveluitamme:</p>
+        <p class="textparagraph">Websivujen toteutus, julkaisu ja ylläpito</p>
+        <p class="textparagraph">Tietokantasovellukset web ja mobiilikäyttöliittymällä</p>
+
+        <p class="textparagraph">Perus esittelysivut alk. 190 €</p>
+        <p class="textparagraph">Web hosting alk. 60 € / kk</p>
+        <p class="textparagraph">HTML, CSS, Javascript, React, Node.js, Django, ASP.NET...</p>
+        <p class="textparagraph">SQL server, MongoDB, PostgeSQL...</p>
+
+        <p class="textparagraph">Palveluitamme:</p>
+        <p class="textparagraph">Websivujen toteutus, julkaisu ja ylläpito</p>
+        <p class="textparagraph">Tietokantasovellukset web ja mobiilikäyttöliittymällä</p>
+
+        <p class="textparagraph">Perus esittelysivut alk. 190 €</p>
+        <p class="textparagraph">Web hosting alk. 60 € / kk</p>
+        <p class="textparagraph">HTML, CSS, Javascript, React, Node.js, Django, ASP.NET...</p>
+        <p class="textparagraph">SQL server, MongoDB, PostgeSQL...</p>
+        <p class="textparagraph">Palveluitamme:</p>
+        <p class="textparagraph">Websivujen toteutus, julkaisu ja ylläpito</p>
+        <p class="textparagraph">Tietokantasovellukset web ja mobiilikäyttöliittymällä</p>
+
+        <p class="textparagraph">Perus esittelysivut alk. 190 €</p>
+        <p class="textparagraph">Web hosting alk. 60 € / kk</p>
+        <p class="textparagraph">HTML, CSS, Javascript, React, Node.js, Django, ASP.NET...</p>
+        <p class="textparagraph">SQL server, MongoDB, PostgeSQL...</p>
+    </div>
+
+    <div id="show">
+
+    </div>
+
+    <script>
+        function yhteys() {
+            let x = "puh: 040 123 23321 | sähköposti: simo.siren@codefix.fi"
+            document.getElementById("yhteys").innerHTML = x
+            document.getElementById("piilotus").style.visibility = "visible"
+        }
+
+        function piilota() {
+            document.getElementById("yhteys").innerHTML = ""
+            document.getElementById("piilotus").style.visibility = "hidden"
+        }
+    </script>
 
 </body>
 
