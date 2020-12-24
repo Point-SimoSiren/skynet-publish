@@ -1,73 +1,84 @@
-.text-area {
-    padding: 10%;
-text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-body {
-    
-    background-color: black;
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #42455a;
 }
 
-.textparagraph {
-    color: silver;
-    letter-spacing: 5px;
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
 }
 
-h1 {
-    padding-left: 30%;
-    padding-right: 25%;
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
 }
 
-#main-header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100;
-    letter-spacing: 40px;
-    color: silver;
-    background-color: black;
+.active {
+    color: #19dafa !important;
 }
 
-h4 {
-    color: gold;
+.signup-btn {
+top: 40px;
+right: 100px;
+position: absolute;
+text-decoration: none;
+color: #fff;
+border: 2px solid transparent;
+border-radius: 20px;
+background-image: linear-gradient(#42455a,#42455a)
+,radial-gradient(circle at top left,#fd00da,#19d7f8);
+background-origin: border-box;
+background-clip: content-box,border-box;
 }
 
-@media only screen and (max-width: 500px) {
-    #main-header {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        width: 100;
-        letter-spacing: 20px;
-        color: silver;
-        background-color: black;
+.signup-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.banner {
+    width: 80%;
+    height: 80%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: #fff
+}
+
+.app-text {
+    width: 50%;
+    float: left;
+}
+
+.app-text h1 {
+font-size: 43px;
+width: 640px;
+position: relative;
+margin-left: 40px;    
+}
+
+.app-text p {
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;    
     }
-  }
 
-  .myButton {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background-color: black;
-	border-radius:2px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color: silver;
-	font-family:Verdana;
-	font-size:21px;
-	padding:4px 5px;
-	text-decoration:none;
-    margin-left: 10%;
-    margin-bottom: 3%;
+.app-picture {
+    width: 50%;
+    float: right;
 }
-.myButton:hover {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-    background-color: black;
-    color: black;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
+
+.app-picture img {
+    width: 100%;
 }

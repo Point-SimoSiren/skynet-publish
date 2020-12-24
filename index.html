@@ -2,70 +2,32 @@
 <html>
 
 <head>
-    <title>Skynet</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>web sivu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <button class="myButton" id="piilotus" style="visibility: hidden;" onclick="piilota()">piilota</button>
-    <h4 id="yhteys"></h4>
-    <div id="main-header">
-        <button class="myButton" onclick="yhteys()">yhteystietomme</button>
-
-        <h1>codefix</h1>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="active">Etusivu</li>
+                <li>Palvelumme</li>
+                <li>Yhteystiedot</li>
+                <li><a class="signup-btn" href="https://github.com/point-SimoSiren"><span>Github reference</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="app-text">
+                <h1>Digiwork</h1>
+                <p>Digitaaliset ratkaisut yksilölliseen tarpeeseen</p>
+                <p>Sivusto tehty css taitoja kehittääkseni
+                    ja testatakseni julkaisua Linux<br> virtuaalikoneen avulla</p>
+            </div>
+            <div class="app-picture">
+                <img src="kuvaneon.jpg">
+            </div>
+        </div>
     </div>
-
-
-
-
-    <div class="text-area">
-        <p class="textparagraph">Palveluitamme:</p>
-        <p class="textparagraph">Websivujen toteutus, julkaisu ja ylläpito</p>
-        <p class="textparagraph">Tietokantasovellukset web ja mobiilikäyttöliittymällä</p>
-
-        <p class="textparagraph">Perus esittelysivut alk. 190 €</p>
-        <p class="textparagraph">Web hosting alk. 60 € / kk</p>
-        <p class="textparagraph">HTML, CSS, Javascript, React, Node.js, Django, ASP.NET...</p>
-        <p class="textparagraph">SQL server, MongoDB, PostgeSQL...</p>
-
-        <p class="textparagraph">Palveluitamme:</p>
-        <p class="textparagraph">Websivujen toteutus, julkaisu ja ylläpito</p>
-        <p class="textparagraph">Tietokantasovellukset web ja mobiilikäyttöliittymällä</p>
-
-        <p class="textparagraph">Perus esittelysivut alk. 190 €</p>
-        <p class="textparagraph">Web hosting alk. 60 € / kk</p>
-        <p class="textparagraph">HTML, CSS, Javascript, React, Node.js, Django, ASP.NET...</p>
-        <p class="textparagraph">SQL server, MongoDB, PostgeSQL...</p>
-        <p class="textparagraph">Palveluitamme:</p>
-        <p class="textparagraph">Websivujen toteutus, julkaisu ja ylläpito</p>
-        <p class="textparagraph">Tietokantasovellukset web ja mobiilikäyttöliittymällä</p>
-
-        <p class="textparagraph">Perus esittelysivut alk. 190 €</p>
-        <p class="textparagraph">Web hosting alk. 60 € / kk</p>
-        <p class="textparagraph">HTML, CSS, Javascript, React, Node.js, Django, ASP.NET...</p>
-        <p class="textparagraph">SQL server, MongoDB, PostgeSQL...</p>
-    </div>
-
-    <div id="show">
-
-    </div>
-
-    <script>
-        function yhteys() {
-            let x = "puh: 040 123 23321 | sähköposti: simo.siren@codefix.fi"
-            document.getElementById("yhteys").innerHTML = x
-            document.getElementById("piilotus").style.visibility = "visible"
-        }
-
-        function piilota() {
-            document.getElementById("yhteys").innerHTML = ""
-            document.getElementById("piilotus").style.visibility = "hidden"
-        }
-    </script>
-
 </body>
 
 </html>
